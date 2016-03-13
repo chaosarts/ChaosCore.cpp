@@ -14,6 +14,7 @@
 		C4E4E6611C8F24BD00AC2C72 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */; };
 		C4E4E6621C8F24BD00AC2C72 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65B1C8F24BD00AC2C72 /* core.cpp */; };
 		C4E4E6631C8F24BD00AC2C72 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */; };
+		C4F009C51C951002001BE121 /* string_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009C41C951002001BE121 /* string_func.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		C4E4E65B1C8F24BD00AC2C72 /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
 		C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		C4F009C31C950F3D001BE121 /* string_func.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = string_func.hpp; sourceTree = "<group>"; };
+		C4F009C41C951002001BE121 /* string_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = string_func.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		C4E4E64A1C8F24AA00AC2C72 /* ChaosCore */ = {
 			isa = PBXGroup;
 			children = (
+				C4F009C21C950F29001BE121 /* Functions */,
 				C4E4E6561C8F24BD00AC2C72 /* Application.h */,
 				C4E4E6571C8F24BD00AC2C72 /* core.h */,
 				C4E4E6581C8F24BD00AC2C72 /* Exception.h */,
@@ -66,6 +70,15 @@
 				C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */,
 			);
 			path = ChaosCore;
+			sourceTree = "<group>";
+		};
+		C4F009C21C950F29001BE121 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C4F009C31C950F3D001BE121 /* string_func.hpp */,
+				C4F009C41C951002001BE121 /* string_func.cpp */,
+			);
+			name = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			files = (
 				C4E4E6621C8F24BD00AC2C72 /* core.cpp in Sources */,
 				C4E4E6631C8F24BD00AC2C72 /* Exception.cpp in Sources */,
+				C4F009C51C951002001BE121 /* string_func.cpp in Sources */,
 				C4E4E6611C8F24BD00AC2C72 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

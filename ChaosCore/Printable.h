@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosCore_Printable_h_
-#define _ChaosCore_Printable_h_
+#ifndef ChaosCore_Printable_hpp_
+#define ChaosCore_Printable_hpp_
 
 namespace ca
 {

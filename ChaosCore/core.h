@@ -7,8 +7,8 @@
  *
  */
 
-#ifndef _ca_core_h_
-#define _ca_core_h_
+#ifndef ChaosCore_core_hpp_
+#define ChaosCore_core_hpp_
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)

@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef _ChaosCore_Application_h_
-#define _ChaosCore_Application_h_
+#ifndef ChaosCore_Application_hpp_
+#define ChaosCore_Application_hpp_
 
 #include <cstdlib>
 #include <cstdio>
