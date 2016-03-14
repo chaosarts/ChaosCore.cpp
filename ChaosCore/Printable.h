@@ -8,19 +8,16 @@
 #ifndef ChaosCore_Printable_hpp_
 #define ChaosCore_Printable_hpp_
 
-namespace ca
+namespace chaos
 {
-	namespace core
+
+	class Printable
 	{
+	public:
+		virtual ~Printable() {};
+		virtual const char* toString () = 0;
+	};
 
-		class Printable
-		{
-		public:
-			virtual ~Printable() {};
-			virtual const char* toString () = 0;
-		};
-
-	} /* namespace core */
 } /* namespace ca */
 
 #endif /* PRINTABLE_H_ */

@@ -20,21 +20,17 @@
 #include "Printable.h"
 #include "Exception.h"
 
-namespace ca
+namespace chaos
 {
-	namespace core
-	{
-		typedef enum {
-			INFO, NOTICE, WARN, ERROR
-		} LogLevel;
-		
-		void info (const char* message, ...);
-		void notice (const char* message, ...);
-		void warn (const char* message, ...);
-		void error (const char* message, ...);
-	}
+	typedef enum {
+		INFO, NOTICE, WARN, ERROR
+	} LogLevel;
+	
+	void info (const char* message, ...);
+	void notice (const char* message, ...);
+	void warn (const char* message, ...);
+	void error (const char* message, ...);
 }
-
 
 #pragma GCC visibility pop
 #endif

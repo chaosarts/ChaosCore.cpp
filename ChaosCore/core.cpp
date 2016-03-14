@@ -7,67 +7,64 @@
 
 #include "core.h"
 
-namespace ca
+namespace chaos
 {
-	namespace core
+	void log (LogLevel level, const char* message, va_list argptr)
 	{
-		void log (LogLevel level, const char* message, va_list argptr)
-		{
 #ifdef DEBUG
-			const char* label = "";
-			FILE* stream = stdout;
+		const char* label = "";
+		FILE* stream = stdout;
 
-			switch (level)
-			{
-				case LogLevel::INFO:
-					label = "Info";
-					break;
-				case LogLevel::NOTICE:
-					label = "Notice";
-					break;
-				case LogLevel::WARN:
-					label = "Warning";
-					stream = stderr;
-					break;
-				case LogLevel::ERROR:
-					label = "Error";
-					stream = stderr;
-					break;
-			}
+		switch (level)
+		{
+			case LogLevel::INFO:
+				label = "Info";
+				break;
+			case LogLevel::NOTICE:
+				label = "Notice";
+				break;
+			case LogLevel::WARN:
+				label = "Warning";
+				stream = stderr;
+				break;
+			case LogLevel::ERROR:
+				label = "Error";
+				stream = stderr;
+				break;
+		}
 
-			char* fMessage = new char();
-			vsprintf(fMessage, message, argptr);
-			va_end(argptr);
-			fprintf(stream, "[%s]\t%s\n", label, fMessage);
+		char* fMessage = new char();
+		vsprintf(fMessage, message, argptr);
+		va_end(argptr);
+		fprintf(stream, "[%s]\t%s\n", label, fMessage);
 #endif
-		}
+	}
 
-		void info (const char* message, ...)
-		{
-			va_list argptr;
-			va_start(argptr, message);
-			log(LogLevel::INFO, message, argptr);
-		}
+	void info (const char* message, ...)
+	{
+		va_list argptr;
+		va_start(argptr, message);
+		log(LogLevel::INFO, message, argptr);
+	}
 
-		void notice (const char* message, ...)
-		{
-			va_list argptr;
-			va_start(argptr, message);
-			log(LogLevel::NOTICE, message, argptr);
-		}
+	void notice (const char* message, ...)
+	{
+		va_list argptr;
+		va_start(argptr, message);
+		log(LogLevel::NOTICE, message, argptr);
+	}
 
-		void warn (const char* message, ...)
-		{
-			va_list argptr;
-			va_start(argptr, message);
-			log(LogLevel::WARN, message, argptr);
-		}
+	void warn (const char* message, ...)
+	{
+		va_list argptr;
+		va_start(argptr, message);
+		log(LogLevel::WARN, message, argptr);
+	}
 
-		void error (const char* message, ...)
-		{
-			va_list argptr;
-			va_start(argptr, message);
-			log(LogLevel::ERROR, message, argptr);
-		}
+	void error (const char* message, ...)
+	{
+		va_list argptr;
+		va_start(argptr, message);
+		log(LogLevel::ERROR, message, argptr);
 	}
 }
