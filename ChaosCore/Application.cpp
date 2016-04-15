@@ -5,7 +5,14 @@
  *      Author: chaos
  */
 
-#include "Application.h"
+#include <cstdlib>
+#include <cstdio>
+#include "ChaosCore.hpp"
+#include "Application.hpp"
+#include "Exception.hpp"
+
+extern unsigned char Manifest_xml[];
+extern unsigned int Manifest_xml_len;
 
 namespace chaos
 {
@@ -17,6 +24,7 @@ namespace chaos
 
 	Application* Application::_instance = new Application();
 
+	
 	Application* Application::getInstance() {
 		return _instance;
 	}
@@ -28,12 +36,15 @@ namespace chaos
 	 +-----------------------------------------------------
 	 */
 
-	Application::Application() {}
+	Application::Application()
+	{
+	}
 
 
 	Application::~Application()
 	{
 		_delegate->applicationWillTerminate();
+		delete _delegate;
 	}
 
 
@@ -43,20 +54,16 @@ namespace chaos
 	 +-----------------------------------------------------
 	 */
 
-	void Application::init (Delegate* delegate)
+	void Application::init (AppDelegate* delegate)
 	{
 		_delegate = delegate;
+				
 	}
 
 
 	void Application::run ()
 	{
-		if (!_delegate)
-		{
-			fprintf(stderr, "Application not initialized.\n");
-			exit(0);
-		}
-
+		if (!_delegate) throw new Exception("Application not initialized.\n");
 		_delegate->applicationDidLaunch();
 	}
 } /* namespace ca */

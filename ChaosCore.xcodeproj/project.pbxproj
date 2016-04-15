@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4E4E65D1C8F24BD00AC2C72 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6561C8F24BD00AC2C72 /* Application.h */; };
-		C4E4E65E1C8F24BD00AC2C72 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6571C8F24BD00AC2C72 /* core.h */; };
-		C4E4E65F1C8F24BD00AC2C72 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6581C8F24BD00AC2C72 /* Exception.h */; };
-		C4E4E6601C8F24BD00AC2C72 /* Printable.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6591C8F24BD00AC2C72 /* Printable.h */; };
+		C4E4E65D1C8F24BD00AC2C72 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6561C8F24BD00AC2C72 /* Application.hpp */; };
+		C4E4E65E1C8F24BD00AC2C72 /* ChaosCore.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6571C8F24BD00AC2C72 /* ChaosCore.hpp */; };
+		C4E4E65F1C8F24BD00AC2C72 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6581C8F24BD00AC2C72 /* Exception.hpp */; };
 		C4E4E6611C8F24BD00AC2C72 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */; };
-		C4E4E6621C8F24BD00AC2C72 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65B1C8F24BD00AC2C72 /* core.cpp */; };
+		C4E4E6621C8F24BD00AC2C72 /* ChaosCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65B1C8F24BD00AC2C72 /* ChaosCore.cpp */; };
 		C4E4E6631C8F24BD00AC2C72 /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */; };
+		C4EAA3F31CA0DED4005D815B /* AppDelegate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4EAA3F11CA0DED4005D815B /* AppDelegate.hpp */; };
+		C4EAA3F51CA0E27D005D815B /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4EAA3F41CA0E27D005D815B /* AppDelegate.cpp */; };
 		C4F009C51C951002001BE121 /* string_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009C41C951002001BE121 /* string_func.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4E4E6481C8F24AA00AC2C72 /* libChaosCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChaosCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4E4E6561C8F24BD00AC2C72 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
-		C4E4E6571C8F24BD00AC2C72 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
-		C4E4E6581C8F24BD00AC2C72 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
-		C4E4E6591C8F24BD00AC2C72 /* Printable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printable.h; sourceTree = "<group>"; };
+		C4E4E6561C8F24BD00AC2C72 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		C4E4E6571C8F24BD00AC2C72 /* ChaosCore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosCore.hpp; sourceTree = "<group>"; };
+		C4E4E6581C8F24BD00AC2C72 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
 		C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		C4E4E65B1C8F24BD00AC2C72 /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
+		C4E4E65B1C8F24BD00AC2C72 /* ChaosCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChaosCore.cpp; sourceTree = "<group>"; };
 		C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		C4EAA3F11CA0DED4005D815B /* AppDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
+		C4EAA3F41CA0E27D005D815B /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		C4F009C31C950F3D001BE121 /* string_func.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = string_func.hpp; sourceTree = "<group>"; };
 		C4F009C41C951002001BE121 /* string_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = string_func.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4B635061CA0B40400D406C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4EAA3F41CA0E27D005D815B /* AppDelegate.cpp */,
+				C4EAA3F11CA0DED4005D815B /* AppDelegate.hpp */,
+				C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */,
+				C4E4E6561C8F24BD00AC2C72 /* Application.hpp */,
+				C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */,
+				C4E4E6581C8F24BD00AC2C72 /* Exception.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C4B635071CA0B43900D406C0 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		C4B635081CA0B44B00D406C0 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
 		C4E4E63F1C8F24AA00AC2C72 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +89,12 @@
 		C4E4E64A1C8F24AA00AC2C72 /* ChaosCore */ = {
 			isa = PBXGroup;
 			children = (
+				C4B635061CA0B40400D406C0 /* Classes */,
 				C4F009C21C950F29001BE121 /* Functions */,
-				C4E4E6561C8F24BD00AC2C72 /* Application.h */,
-				C4E4E6571C8F24BD00AC2C72 /* core.h */,
-				C4E4E6581C8F24BD00AC2C72 /* Exception.h */,
-				C4E4E6591C8F24BD00AC2C72 /* Printable.h */,
-				C4E4E65A1C8F24BD00AC2C72 /* Application.cpp */,
-				C4E4E65B1C8F24BD00AC2C72 /* core.cpp */,
-				C4E4E65C1C8F24BD00AC2C72 /* Exception.cpp */,
+				C4B635081CA0B44B00D406C0 /* Structs */,
+				C4B635071CA0B43900D406C0 /* Templates */,
+				C4E4E6571C8F24BD00AC2C72 /* ChaosCore.hpp */,
+				C4E4E65B1C8F24BD00AC2C72 /* ChaosCore.cpp */,
 			);
 			path = ChaosCore;
 			sourceTree = "<group>";
@@ -88,10 +115,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E4E65D1C8F24BD00AC2C72 /* Application.h in Headers */,
-				C4E4E65F1C8F24BD00AC2C72 /* Exception.h in Headers */,
-				C4E4E6601C8F24BD00AC2C72 /* Printable.h in Headers */,
-				C4E4E65E1C8F24BD00AC2C72 /* core.h in Headers */,
+				C4E4E65D1C8F24BD00AC2C72 /* Application.hpp in Headers */,
+				C4EAA3F31CA0DED4005D815B /* AppDelegate.hpp in Headers */,
+				C4E4E65F1C8F24BD00AC2C72 /* Exception.hpp in Headers */,
+				C4E4E65E1C8F24BD00AC2C72 /* ChaosCore.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +148,7 @@
 		C4E4E6401C8F24AA00AC2C72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fu Lam Diep";
 				TargetAttributes = {
 					C4E4E6471C8F24AA00AC2C72 = {
@@ -151,8 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E4E6621C8F24BD00AC2C72 /* core.cpp in Sources */,
+				C4E4E6621C8F24BD00AC2C72 /* ChaosCore.cpp in Sources */,
 				C4E4E6631C8F24BD00AC2C72 /* Exception.cpp in Sources */,
+				C4EAA3F51CA0E27D005D815B /* AppDelegate.cpp in Sources */,
 				C4F009C51C951002001BE121 /* string_func.cpp in Sources */,
 				C4E4E6611C8F24BD00AC2C72 /* Application.cpp in Sources */,
 			);
@@ -197,6 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,6 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -243,6 +273,7 @@
 		C4E4E6541C8F24AA00AC2C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -256,6 +287,7 @@
 		C4E4E6551C8F24AA00AC2C72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;

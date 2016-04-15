@@ -5,8 +5,8 @@
  *      Author: chaos
  */
 
-#ifndef ChaosCore_Exception_hpp_
-#define ChaosCore_Exception_hpp_
+#ifndef ChaosCore_Exception_hpp
+#define ChaosCore_Exception_hpp
 
 namespace chaos
 {
