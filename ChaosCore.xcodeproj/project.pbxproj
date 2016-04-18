@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4AB85961CC4452000A69438 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4AB85951CC4452000A69438 /* main.cpp */; };
+		C4AB859D1CC4455200A69438 /* libChaosCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4E6481C8F24AA00AC2C72 /* libChaosCore.dylib */; };
+		C4AB859F1CC4459200A69438 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AB859E1CC4459200A69438 /* libgtest.a */; };
 		C4E4E65D1C8F24BD00AC2C72 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6561C8F24BD00AC2C72 /* Application.hpp */; };
 		C4E4E65E1C8F24BD00AC2C72 /* ChaosCore.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6571C8F24BD00AC2C72 /* ChaosCore.hpp */; };
 		C4E4E65F1C8F24BD00AC2C72 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4E4E6581C8F24BD00AC2C72 /* Exception.hpp */; };
@@ -18,7 +21,33 @@
 		C4F009C51C951002001BE121 /* string_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4F009C41C951002001BE121 /* string_func.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C4AB859B1CC4454A00A69438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E4E6401C8F24AA00AC2C72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E4E6471C8F24AA00AC2C72;
+			remoteInfo = ChaosCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4AB85911CC4451F00A69438 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C4AB85931CC4451F00A69438 /* ChaosCoreTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChaosCoreTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AB85951CC4452000A69438 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4AB859E1CC4459200A69438 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../../opt/local/lib/libgtest.a; sourceTree = "<group>"; };
+		C4AB85A21CC445F500A69438 /* ChaosCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChaosCore.hpp; sourceTree = "<group>"; };
 		C4E4E6481C8F24AA00AC2C72 /* libChaosCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChaosCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4E6561C8F24BD00AC2C72 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		C4E4E6571C8F24BD00AC2C72 /* ChaosCore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChaosCore.hpp; sourceTree = "<group>"; };
@@ -33,6 +62,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C4AB85901CC4451F00A69438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AB859F1CC4459200A69438 /* libgtest.a in Frameworks */,
+				C4AB859D1CC4455200A69438 /* libChaosCore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E4E6451C8F24AA00AC2C72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4AB85941CC4452000A69438 /* ChaosCoreTest */ = {
+			isa = PBXGroup;
+			children = (
+				C4AB85951CC4452000A69438 /* main.cpp */,
+				C4AB85A21CC445F500A69438 /* ChaosCore.hpp */,
+			);
+			path = ChaosCoreTest;
+			sourceTree = "<group>";
+		};
 		C4B635061CA0B40400D406C0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +120,9 @@
 		C4E4E63F1C8F24AA00AC2C72 = {
 			isa = PBXGroup;
 			children = (
+				C4AB859E1CC4459200A69438 /* libgtest.a */,
 				C4E4E64A1C8F24AA00AC2C72 /* ChaosCore */,
+				C4AB85941CC4452000A69438 /* ChaosCoreTest */,
 				C4E4E6491C8F24AA00AC2C72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E4E6481C8F24AA00AC2C72 /* libChaosCore.dylib */,
+				C4AB85931CC4451F00A69438 /* ChaosCoreTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +175,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C4AB85921CC4451F00A69438 /* ChaosCoreTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AB85991CC4452000A69438 /* Build configuration list for PBXNativeTarget "ChaosCoreTest" */;
+			buildPhases = (
+				C4AB858F1CC4451F00A69438 /* Sources */,
+				C4AB85901CC4451F00A69438 /* Frameworks */,
+				C4AB85911CC4451F00A69438 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AB859C1CC4454A00A69438 /* PBXTargetDependency */,
+			);
+			name = ChaosCoreTest;
+			productName = ChaosCoreTest;
+			productReference = C4AB85931CC4451F00A69438 /* ChaosCoreTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		C4E4E6471C8F24AA00AC2C72 /* ChaosCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E4E6531C8F24AA00AC2C72 /* Build configuration list for PBXNativeTarget "ChaosCore" */;
@@ -151,6 +219,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fu Lam Diep";
 				TargetAttributes = {
+					C4AB85921CC4451F00A69438 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					C4E4E6471C8F24AA00AC2C72 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -169,11 +240,20 @@
 			projectRoot = "";
 			targets = (
 				C4E4E6471C8F24AA00AC2C72 /* ChaosCore */,
+				C4AB85921CC4451F00A69438 /* ChaosCoreTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C4AB858F1CC4451F00A69438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AB85961CC4452000A69438 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E4E6441C8F24AA00AC2C72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,7 +268,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C4AB859C1CC4454A00A69438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E4E6471C8F24AA00AC2C72 /* ChaosCore */;
+			targetProxy = C4AB859B1CC4454A00A69438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C4AB85971CC4452000A69438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4AB85981CC4452000A69438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C4E4E6511C8F24AA00AC2C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -225,7 +337,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /opt/local/include;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					../ChaosCore,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,7 +378,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /opt/local/include;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					../ChaosCore,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -301,6 +419,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C4AB85991CC4452000A69438 /* Build configuration list for PBXNativeTarget "ChaosCoreTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AB85971CC4452000A69438 /* Debug */,
+				C4AB85981CC4452000A69438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C4E4E6431C8F24AA00AC2C72 /* Build configuration list for PBXProject "ChaosCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -36,13 +36,14 @@ namespace chaos
 		ERROR = 1
 	} LogLevel;
 	
-	void log (LogLevel level, const char* message, va_list argptr)
+	void log (LogLevel level, const char* format, va_list argptr)
 	{
 #ifdef DEBUG
 		if (level > CHAOS_DEBUG_LEVEL) return;
 		const char* label = "";
+		
 		FILE* stream = stdout;
-
+		
 		switch (level)
 		{
 			case LogLevel::INFO:
@@ -61,42 +62,49 @@ namespace chaos
 				break;
 		}
 		
-//		int count = 0;
-//		const char* message_ptr = message;
-//		while (*message_ptr != 0) count++;
-//		
-//		char fMessage[count];
-//		vsprintf(fMessage, message, argptr);
-//		va_end(argptr);
-//		fprintf(stream, "[%s]\t%s\n", label, fMessage);
+		fprintf(stream, "[%s] ", label);
+		vfprintf(stream, format, argptr);
+		fprintf(stream, "\n");
 #endif
 	}
 
-	void info (const char* __restrict message, ...)
+	void info (const char* __restrict format, ...)
 	{
+#ifdef DEBUG
 		va_list argptr;
-		va_start(argptr, message);
-		log(LogLevel::INFO, message, argptr);
+		va_start(argptr, format);
+		log(LogLevel::INFO, format, argptr);
+		va_end(argptr);
+#endif
 	}
 
-	void notice (const char* __restrict message, ...)
+	void notice (const char* __restrict format, ...)
 	{
+#ifdef DEBUG
 		va_list argptr;
-		va_start(argptr, message);
-		log(LogLevel::NOTICE, message, argptr);
+		va_start(argptr, format);
+		log(LogLevel::NOTICE, format, argptr);
+		va_end(argptr);
+#endif
 	}
 
-	void warn (const char* __restrict message, ...)
+	void warn (const char* __restrict format, ...)
 	{
+#ifdef DEBUG
 		va_list argptr;
-		va_start(argptr, message);
-		log(LogLevel::WARN, message, argptr);
+		va_start(argptr, format);
+		log(LogLevel::WARN, format, argptr);
+		va_end(argptr);
+#endif
 	}
 
-	void error (const char* __restrict message, ...)
+	void error (const char* __restrict format, ...)
 	{
+#ifdef DEBUG
 		va_list argptr;
-		va_start(argptr, message);
-		log(LogLevel::ERROR, message, argptr);
+		va_start(argptr, format);
+		log(LogLevel::ERROR, format, argptr);
+		va_end(argptr);
+#endif
 	}
 }

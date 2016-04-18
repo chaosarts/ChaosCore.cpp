@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ChaosCoreTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>C4AB85921CC4451F00A69438</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4E4E6471C8F24AA00AC2C72</key>
 		<dict>
 			<key>primary</key>
