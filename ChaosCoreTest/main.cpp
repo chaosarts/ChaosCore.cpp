@@ -6,9 +6,9 @@
 //  Copyright © 2016 Fu Lam Diep. All rights reserved.
 //
 
-
-#include "ChaosCore.hpp"
 #include <gtest/gtest.h>
+#include "file_func.h"
+
 
 int main(int argc, char** argv)
 {
